@@ -2,7 +2,7 @@
     "server": "",
     "title": "API-DOCS",
     "headers": [
-        "token", "account"
+        "ng-params-one", "ng-params-two"
     ],
     "docs": [
         "goods.json",

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="padding:0px;background-color:white;">
 
 <head>
     <meta charset="utf-8">
@@ -62,9 +62,9 @@
     </style>
 </head>
 
-<body>
-    <div class="container">
-        <h3 class="text-center text-info">
+<body style="margin-top:10px !important;">
+    <div class="container" style="position:flex" style="margin:0px;padding:0px;">
+        <h3 style="font-size:20px;line-height:30px;" class="text-center text-info">
             <span id="index-title">API-DOCS</span>
             <span class="fa fa-cog pull-right" data-toggle="modal" data-target="#myModal-1"></span>
         </h3>
@@ -74,18 +74,14 @@
     </div>
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title text-info" id="myModalLabel"><i class="fa fa-comments fa-fw" aria-hidden="true"></i>API-TEST</h4>
                 </div>
-                <div class="modal-body" id="error-pad">
-                    <pre>
-                        <code id="success-pad">
-                            
-                        </code>
-                    </pre>
+                <div class="modal-body">
+                    <pre><code id="lg-pad"></code></pre>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-remove fa-fw"></i>关闭</button>
@@ -117,7 +113,8 @@
     </div>
 </body>
 <script src="lib/flat-ui/js/vendor/jquery.min.js"></script>
-<script src="lib/flat-ui/js/flat-ui.min.js"></script>
+<!-- <script src="lib/flat-ui/js/flat-ui.min.js"></script> -->
+<script src="lib/flat-ui/js/bootstrap.min.js"></script>
 <script src="lib/index.js"></script>
 
 </html>
