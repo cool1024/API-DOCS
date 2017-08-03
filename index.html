@@ -12,7 +12,7 @@
     <link href="lib/flat-ui/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Loading Flat UI -->
-    <!-- <link href="lib/flat-ui/css/flat-ui.css" rel="stylesheet"> -->
+     <!-- <link href="lib/flat-ui/css/flat-ui.css" rel="stylesheet">  -->
 
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
@@ -46,19 +46,21 @@
         button,
         a {
             outline: 0 none !important;
+            display: block;
         }
         
         a:hover {
-            decoration: none;
+            text-decoration: none;
+            text-decoration: none;
         }
         
         a:active {
-            decoration: none;
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
         }
         
-        a {
-            display: block;
-        }
     </style>
 </head>
 
@@ -81,7 +83,24 @@
                     <h4 class="modal-title text-info" id="myModalLabel"><i class="fa fa-comments fa-fw" aria-hidden="true"></i>API-TEST</h4>
                 </div>
                 <div class="modal-body">
-                    <pre><code id="lg-pad"></code></pre>
+                    <pre style="overflow-y:auto"><code  id="lg-pad"></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-remove fa-fw"></i>关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-info" id="myModalLabel"><i class="fa fa-comments fa-fw" aria-hidden="true"></i>API-TEST</h4>
+                </div>
+                <div class="modal-body">
+                    <div style="overflow-y:auto" id="error-pad"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-remove fa-fw"></i>关闭</button>
