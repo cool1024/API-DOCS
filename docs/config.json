@@ -1,0 +1,11 @@
+{
+    "server": "",
+    "title": "API-DOCS",
+    "headers": [
+        "token", "account"
+    ],
+    "docs": [
+        "goods.json",
+        "example.json"
+    ]
+}

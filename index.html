@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>API-DOCS</title>
+    <meta name="description" content="" />
+
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="lib/flat-ui/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <!-- <link href="lib/flat-ui/css/flat-ui.css" rel="stylesheet"> -->
+
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="lib/flat-ui/js/vendor/html5shiv.js"></script>
+      <script src="lib/flat-ui/vendor/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .string {
+            color: green;
+        }
+        
+        .number {
+            color: darkorange;
+        }
+        
+        .boolean {
+            color: blue;
+        }
+        
+        .null {
+            color: magenta;
+        }
+        
+        .key {
+            color: red;
+        }
+        
+        input,
+        button,
+        a {
+            outline: 0 none !important;
+        }
+        
+        a:hover {
+            decoration: none;
+        }
+        
+        a:active {
+            decoration: none;
+        }
+        
+        a {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center text-info">
+            <span id="index-title">API-DOCS</span>
+            <span class="fa fa-cog pull-right" data-toggle="modal" data-target="#myModal-1"></span>
+        </h3>
+        <div class="panel-group" id="accordion-main" role="tablist" aria-multiselectable="true">
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-info" id="myModalLabel"><i class="fa fa-comments fa-fw" aria-hidden="true"></i>API-TEST</h4>
+                </div>
+                <div class="modal-body" id="error-pad">
+                    <pre>
+                        <code id="success-pad">
+                            
+                        </code>
+                    </pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-remove fa-fw"></i>关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-info" id="myModalLabel"><i class="fa fa-id-card-o fa-fw" aria-hidden="true"></i>权限令牌设置</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="header-form">
+                        <div id="headers-page">
+
+                        </div>
+                        <div class="form-group text-right">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-remove fa-fw"></i>关闭</button>
+                            <button type="button" onclick="setHeaders(document.getElementById('header-form'))" class="btn btn-success" data-dismiss="modal"><i class="fa fa-check fa-fw"></i>确认</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="lib/flat-ui/js/vendor/jquery.min.js"></script>
+<script src="lib/flat-ui/js/flat-ui.min.js"></script>
+<script src="lib/index.js"></script>
+
+</html>

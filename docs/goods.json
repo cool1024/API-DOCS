@@ -1,0 +1,43 @@
+{
+    "title": "商品模块",
+    "forms": [{
+            "title": "添加商品",
+            "description": "商家添加商品",
+            "url": "/goods/add",
+            "method": "post",
+            "inputs": [
+                { "type": "text", "name": "name", "description": "商品名称" },
+                { "type": "text", "name": "price", "description": "商品价格" },
+                { "type": "file", "multiple": "true", "name": "image", "description": "商品图片" }
+            ]
+        },
+        {
+            "title": "查看商品",
+            "description": "商家查看商品信息",
+            "url": "/goods/info",
+            "method": "get",
+            "inputs": [
+                { "type": "text", "name": "id", "description": "商品ID" }
+            ]
+        },
+        {
+            "title": "修改商品",
+            "description": "商家修改商品，(PUT请求不使用表单提交，无法上传图片)",
+            "url": "/goods/update",
+            "method": "put",
+            "inputs": [
+                { "type": "text", "name": "name", "description": "商品名称" },
+                { "type": "text", "name": "price", "description": "商品价格" }
+            ]
+        },
+        {
+            "title": "删除商品",
+            "description": "商家删除商品",
+            "url": "/goods/delete",
+            "method": "delete",
+            "inputs": [
+                { "type": "text", "name": "id", "description": "商品ID" }
+            ]
+        }
+    ]
+}

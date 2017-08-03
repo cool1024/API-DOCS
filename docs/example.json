@@ -1,0 +1,10 @@
+{
+    "title": "测试模块",
+    "forms": [{
+        "title": "查看example文档",
+        "description": "这是一个GET测试请求，可以查看example文档（example.json）",
+        "url": "/docs/example.json",
+        "method": "get",
+        "inputs": []
+    }]
+}
