@@ -12,7 +12,7 @@
     <link href="lib/flat-ui/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Loading Flat UI -->
-     <!-- <link href="lib/flat-ui/css/flat-ui.css" rel="stylesheet">  -->
+    <!-- <link href="lib/flat-ui/css/flat-ui.css" rel="stylesheet">  -->
 
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
@@ -57,10 +57,18 @@
         a:active {
             text-decoration: none;
         }
+        
         a:active {
             text-decoration: none;
         }
         
+        .input-group-addon {
+            background-color: white;
+        }
+        
+        .panel {
+            box-shadow: none !important;
+        }
     </style>
 </head>
 
@@ -83,7 +91,7 @@
                     <h4 class="modal-title text-info" id="myModalLabel"><i class="fa fa-comments fa-fw" aria-hidden="true"></i>API-TEST</h4>
                 </div>
                 <div class="modal-body">
-                    <pre style="overflow-y:auto"><code  id="lg-pad"></code></pre>
+                    <pre style="overflow-y:auto"><code style="padding:10px 10px;" id="lg-pad"></code></pre>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-remove fa-fw"></i>关闭</button>
@@ -100,7 +108,10 @@
                     <h4 class="modal-title text-info" id="myModalLabel"><i class="fa fa-comments fa-fw" aria-hidden="true"></i>API-TEST</h4>
                 </div>
                 <div class="modal-body">
-                    <div style="overflow-y:auto" id="error-pad"></div>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" id="error-pad"></iframe>
+                    </div>
+                    <!-- <iframe style="overflow-y:auto" id="error-pad"></iframe> -->
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-remove fa-fw"></i>关闭</button>
@@ -131,6 +142,9 @@
         </div>
     </div>
 </body>
+<footer class="text-center">
+    <i>Copyright © 2017 XiaoJian. All Rights Reserved.|Dev Anas IT </i>
+</footer>
 <script src="lib/flat-ui/js/vendor/jquery.min.js"></script>
 <!-- <script src="lib/flat-ui/js/flat-ui.min.js"></script> -->
 <script src="lib/flat-ui/js/bootstrap.min.js"></script>

@@ -1,10 +1,110 @@
 {
     "title": "测试模块",
     "forms": [{
-        "title": "查看example文档",
-        "description": "这是一个GET测试请求，可以查看example文档（example.json）",
-        "url": "/API-DOCS/docs/example.json",
-        "method": "get",
-        "inputs": []
-    }]
+            "title": "字段参数校验",
+            "description": "测试请求参数校验服务",
+            "url": "/valid/test",
+            "method": "post",
+            "inputs": [{
+                    "name": "email",
+                    "description": "邮箱"
+                },
+                {
+                    "name": "password",
+                    "description": "密码"
+                }
+            ]
+        },
+        {
+            "title": "上传文件",
+            "description": "上传一个文件，并获取此文件的url链接",
+            "url": "/upload/file",
+            "method": "post",
+            "inputs": [{
+                "type": "file",
+                "name": "file",
+                "description": "选择文件"
+            }]
+        },
+        {
+            "title": "图片上传",
+            "description": "上传一张图片，并获取此图片的url链接",
+            "url": "/upload/image",
+            "method": "post",
+            "inputs": [{
+                "type": "file",
+                "name": "image",
+                "description": "选择图片"
+            }]
+        },
+        {
+            "title": "用户登入",
+            "description": "用户登入测试接口",
+            "url": "/login",
+            "method": "post",
+            "inputs": [{
+                    "name": "email",
+                    "description": "邮箱"
+                },
+                {
+                    "name": "password",
+                    "description": "密码"
+                }
+            ]
+        },
+        {
+            "title": "用户注册",
+            "description": "用户注册测试接口",
+            "url": "/signup",
+            "method": "post",
+            "inputs": [{
+                    "name": "email",
+                    "description": "用户邮箱"
+                },
+                {
+                    "name": "name",
+                    "description": "用户姓名"
+                },
+                {
+                    "name": "password",
+                    "description": "用户密码"
+                }
+            ]
+        },
+        {
+            "title": "权限令牌校验",
+            "description": "用户权限令牌校验测试接口",
+            "url": "/check",
+            "method": "post",
+            "inputs": [{
+                    "name": "secret",
+                    "description": "客户端获取的secret"
+                },
+                {
+                    "name": "token",
+                    "description": "客户端获取的token"
+                }
+            ]
+        },
+        {
+            "title": "测试银联支付",
+            "description": "一个银联网上支付示例",
+            "url": "/unionpay",
+            "method": "post",
+            "inputs": []
+        },
+        {
+            "title": "测试银联订单确认",
+            "description": "一个银联网上支付示例",
+            "url": "/unionpay/confirm",
+            "method": "post",
+            "inputs": [{
+                "name": "order_sn",
+                "description": "订单编号"
+            }, {
+                "name": "created_at",
+                "description": "订单创建时间"
+            }]
+        }
+    ]
 }

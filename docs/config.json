@@ -1,11 +1,11 @@
 {
     "server": "",
-    "title": "API-DOCS",
+    "title": "测试版 API-DOCS",
     "headers": [
         "ng-params-one", "ng-params-two"
     ],
     "docs": [
-        "goods.json",
-        "example.json"
+        "example.json",
+        "goods.json"
     ]
 }
