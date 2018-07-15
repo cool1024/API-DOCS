@@ -1,11 +1,14 @@
 {
     "title": "测试模块",
-    "forms": [{
+    "color": "danger",
+    "forms": [
+        {
             "title": "字段参数校验",
             "description": "测试请求参数校验服务",
             "url": "/valid/test",
             "method": "post",
-            "inputs": [{
+            "inputs": [
+                {
                     "name": "email",
                     "description": "邮箱"
                 },
@@ -20,29 +23,34 @@
             "description": "上传一个文件，并获取此文件的url链接",
             "url": "/upload/file",
             "method": "post",
-            "inputs": [{
-                "type": "file",
-                "name": "file",
-                "description": "选择文件"
-            }]
+            "inputs": [
+                {
+                    "type": "file",
+                    "name": "file",
+                    "description": "选择文件"
+                }
+            ]
         },
         {
             "title": "图片上传",
             "description": "上传一张图片，并获取此图片的url链接",
             "url": "/upload/image",
             "method": "post",
-            "inputs": [{
-                "type": "file",
-                "name": "image",
-                "description": "选择图片"
-            }]
+            "inputs": [
+                {
+                    "type": "file",
+                    "name": "image",
+                    "description": "选择图片"
+                }
+            ]
         },
         {
             "title": "用户登入",
             "description": "用户登入测试接口",
             "url": "/login",
             "method": "post",
-            "inputs": [{
+            "inputs": [
+                {
                     "name": "email",
                     "description": "邮箱"
                 },
@@ -57,7 +65,8 @@
             "description": "用户注册测试接口",
             "url": "/signup",
             "method": "post",
-            "inputs": [{
+            "inputs": [
+                {
                     "name": "email",
                     "description": "用户邮箱"
                 },
@@ -76,7 +85,8 @@
             "description": "用户权限令牌校验测试接口",
             "url": "/check",
             "method": "post",
-            "inputs": [{
+            "inputs": [
+                {
                     "name": "secret",
                     "description": "客户端获取的secret"
                 },
@@ -98,13 +108,16 @@
             "description": "一个银联网上支付示例",
             "url": "/unionpay/confirm",
             "method": "post",
-            "inputs": [{
-                "name": "order_sn",
-                "description": "订单编号"
-            }, {
-                "name": "created_at",
-                "description": "订单创建时间"
-            }]
+            "inputs": [
+                {
+                    "name": "order_sn",
+                    "description": "订单编号"
+                },
+                {
+                    "name": "created_at",
+                    "description": "订单创建时间"
+                }
+            ]
         }
     ]
 }
